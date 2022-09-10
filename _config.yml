@@ -3,13 +3,13 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url:                   'https://fredhur.github.io'
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-#baseurl: ""
+baseurl: ""
 
 
 
@@ -18,54 +18,64 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  en-US , ko-KR
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                Fredhur Tech Blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+      Computer Science, 프로그래밍 언어, 기록해둘만한 지식 등을 공유합니다.
 
 # A shorter description for the sidebar.
-tagline:               fredhur 의 블로그입니다.
+tagline:               컴퓨터 과학자 입니다.
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [CS, Computer, ComputerScience, programming, cpp]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  #/assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                <JoonHyung> <Hur>
+  email:               <fredhur.naver.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
+#  - title:             Example  # Example and Documentation is default setting
+#    url:               /example/
+#  - title:             Documentation
+#    url:               /docs/
   - title:             About
-    url:               /about/
+    url:               /About/
+  - title: Study
+    url: /Study/
+    submenu:
+      - title: C++
+        url: /CPP/
+      - title: DataStructure and Algorithm
+        url: /DataStructureAndAlgorithm/
+      - title: FrameWork
+        url: /FrameWork/
+  - title: Diary
+    url: /Diary/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+ # - title:             LICENSE
+ #   url:               /LICENSE/
+ # - title:             NOTICE
+ #   url:               /NOTICE/
+ # - title:             CHANGELOG
+ #   url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2022. All rights reserved.
@@ -74,8 +84,9 @@ copyright:             © 2022. All rights reserved.
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
-paginate:              10
-paginate_path:         /:num/
+# 
+#paginate:              10
+#paginate_path:         /:num/
 
 
 #Theme
@@ -137,10 +148,10 @@ defaults:
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
-  # - scope:
-  #     type:            posts
-  #   values:
-  #     comments:        true
+  - scope:
+      type:            posts
+    values:
+      comments:        true
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -210,7 +221,7 @@ hydejack:
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
   # Run Jekyll with the `JEKYLL_ENV` environment variable set to `production` to enable.
-  no_search:           false
+  no_search:           true
 
   # Set to `true` if you do not want parts of the css inlined in <head/>
   # This will increase site build speed dramatically!

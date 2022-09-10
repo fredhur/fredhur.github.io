@@ -9,7 +9,7 @@ author1:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
     Fredhur's Tech Blog. <br> 
-    ''Job''' : Computer Scientist <br>
+    Job : Computer Scientist <br>
     Major : Computer Science Engineering <br> 
     Language : cpp, python, c#
 
