@@ -9,3 +9,7 @@ permalink: /Study/
 ---
 
 # Study list
+
++ [CPP](./CPP/cpp.md)
++ [DataStructure](./DataStructure/dataStructure.md)
++ [Algorithm](./Algorithm/algorithm.md)

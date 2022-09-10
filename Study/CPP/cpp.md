@@ -1,0 +1,1 @@
+# Fredhur Cpp study list
