@@ -42,7 +42,7 @@ Computer, Magic, Water
 
 ## <font color="dodgerblue">Github</font>
 
-> [My Github](github.com/fredhur)
+> [My Github](https://github.com/fredhur)
 
 
 
