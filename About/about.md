@@ -21,7 +21,7 @@ Computer, Magic, Water
 + Android kernel
 
 ## <font color="dodgerblue">Education</font>
-+ Songang University Computer Science (B.S)
++ Sogang University Computer Science (B.S)
 + Magna Cum Laude Graudate
 + Samsung Electronics schoarship
 

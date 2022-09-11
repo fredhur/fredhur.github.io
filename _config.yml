@@ -26,7 +26,7 @@ title:                Fredhur Tech Blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-      Computer Science, 프로그래밍 언어, 기록해둘만한 지식 등을 공유합니다.
+      Computer Science, 프로그래밍 언어, 혹은 좋은 지식 등을 공유합니다.
 
 # A shorter description for the sidebar.
 tagline:               컴퓨터 과학자 입니다.
