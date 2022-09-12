@@ -4,9 +4,7 @@ title: CircularQueue Buffer
 description: >
   Fixed Size Queue 에 대한 소개
 hide_description: true
-sitemap: 
-    changefreq : daily
-    priority : 1.0
+sitemap: true
 permalink: /DataStructure/
 ---
 

@@ -4,7 +4,7 @@ title: Data Structrue
 description: >
   내가 쓰는 유용한 자료구조에 대한 소개.
 hide_description: true
-sitemap: false
+sitemap: true
 permalink: /Study/DataStructure/
 ---
 

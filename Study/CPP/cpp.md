@@ -4,7 +4,7 @@ title: Modern C++
 description: >
   cpp 에 대한 내용들을 기록합니다.
 hide_description: true
-sitemap: false
+sitemap: true
 permalink: /Study/CPP/
 ---
 
