@@ -8,5 +8,5 @@ sitemap: false
 permalink: /Study/CPP/
 ---
 
-+ [enum class 와 int2Type 에 대한 활용](./2022-09-12-enumClassAndInt2Type.md)
++ [EnumClass2Type - using int2Type and enum class](./2022-09-12-enumClassAndInt2Type.md)
 

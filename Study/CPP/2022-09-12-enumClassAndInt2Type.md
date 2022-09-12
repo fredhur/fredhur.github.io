@@ -2,7 +2,7 @@
 layout: page
 title: Enum Class To Type
 description: >
-  cpp 에 대한 내용들을 기록합니다.
+  enum class 와 int2Type 을 이용한 컨셉
 hide_description: true
 sitemap: false
 permalink: /CPP/
@@ -11,15 +11,16 @@ permalink: /CPP/
 
 # <font color="DodgerBlue">Introduction</font>
 
-enum class 와 int2Type ( c++17 부터) 는 modern c++ 이 제공하는 강력한 기능이다.
-이 글은 이 두가지를 조합하여 읽기 좋은 코드를 작성하는 방법을 다루려고 한다. 
+Enum class and int2Type are powerful grammar that modern c++ provides. 
+This post proposes **EnumClass2Type** which is developed by using enum class and int2Type.
 
+As can be inferred by title , This post deals with how to convert enum class to type.
 
 # <font color="DodgerBlue">enum class</font>
-enum class 는 modern c++ 에서 새로 나온 개념으로, enum 보다 더 강력한 기능을 제공한다. 
-주요 특징은 아래 2가지로 정리 할 수 있다.
+The enum class is a powerful new concept in modern c++. <br>
+The two main features are as follows.
 
-+ <font color="AquaBlue">별도의 namespace 를 가져서 같은 이름을 사용할 수 있다. </font>
++ <font color="AquaBlue">We can use same name since each name has different namespace scope. </font>
    
 ~~~ cpp
 #include <iostream>
@@ -43,9 +44,9 @@ int main()
 }
 ~~~
 
-+ <font color="AquaBlue">Type safe 하다.</font>
++ <font color="AquaBlue">Type safe concept.</font>
 
-기존의 enum 과는 달리 int 로 자동 변환되지 않는다. 간혹 실수로 잘못된 enum 을 int 에 넣는걸 방지해줄 수 있다.
+Unlike enum which used C, enum class does not convert automatically to int. It prevents the mistake of incorrectly assigning enum to int.
 
 ~~~ cpp
 #include <cstdio>
@@ -66,13 +67,13 @@ int main()
 
 # <font color="DodgerBlue">int2Type</font>
 
-int2Type 자체만으로도 많은 내용을 다루어야한다. 페이스북의 모든 구조를 다 설계했다는 전설의 프로그래머가 만들었다고 배웠었는데, 그 분의 성함을 까먹었다.. 
-어찌됐든 int2Type 은 아래처럼 타입의 값, 상수들로 다형성을 추구하기 위해서 만들었다고 우선 이해하자.
+
+The int2Type itself has a lot to do with it. I learned that it was made by a legendary programmer who designed all the structures of Facebook, but I forgot his name.
+Anyway, let's first understand that int2Type was created to pursue polymorphism with type values ​​and constants as shown below.
 
 ~~~ cpp
 
-// int2Type 이 없다면, foo(0) 과 foo(1) 를 별도의 다른 함수로 분리가 불가능하다.
-
+// If there is no int2Type, foo(0) and foo(1) cannot be seperated.
 int foo(int n)
 {
     if(n==0)
@@ -98,7 +99,7 @@ int main()
 
 ~~~ cpp
 
-// int2Type 을 활용한다면? 
+// What if we use int2Type?
 
 #include <cstdio>
 template <int N>
@@ -145,15 +146,15 @@ int main()
 
 ~~~
 
-int2Type<0> 형식으로 사용해야 하지만 0 , 1 , 2 등의 정수 형으로 서로 다른 함수를 오버로딩 할 수 있다는 점이 매력적으로 다가온다.
+It should be used as int2Type<0> , but it is attractive that different functions can be overloaded with integer types such as 0 , 1 , 2 , etc.
 
 
 # <font color="DodgerBlue"> enum class To type</font>
 
-위 두가지 개념을 조합하여, enum class 로 선언된 변수를 타입으로 바꾸는 방법을 소개한다. 
-딱히 명칭은 생각나지 않아 enumClass2Type 이라고 지칭하겠다. 
+Combining the above two concepts, introduce a method to convert a variable declared as an enum class into a type.
+I named this concept as **EnumClass2Type** 
 
-(c++11 부터는 integral_constant 라고 표준화 했다.)
+(Since C++11, int2Type is standardized under the name integral_constant)
 
 ~~~ cpp
 #include <iostream>
@@ -208,14 +209,15 @@ int main()
 
 # <font color="DodgerBlue">Usage</font>
 
-int2Type intergral_constant 라는 명칭으로 modern c++ 에서 다양하게 쓰인다. is_pointer 처럼 내가 건네준 타입이 포인터인지 아닌지를 구분 할 수 있고 is_array 처럼 내가 준 타입이 배열인지 아닌지도 구분할 수 있게 해준다. 
+int2Type is called intergral_constant since c++11, and it is used variously in modern c++. Like **is_pointer**, it is possible to determine whether the type I passed is a pointer or not, and like **is_array**, it also allows out code to determine whether the type I gave is an array or not
 
-나는 이걸 enum 타입이랑 같이 사용하여서 enum 변수 별 다른 함수를 호출 시킬때 쓰고 싶었다. 
-이 부분이 정확히 어디에 잘 쓰일 수 있냐 라는 질문에는 "상황마다 다르다" 가 정답이겠지만, 나의 경우를 소개하자면 state pattern 으로 코딩할때 많이 사용하였다. 
 
-각 state 의 이름을 enum class 타입으로 정의 해두고 각 state 마다 해야하는 행위를 함수 오버로딩으로 구현하였다.
+I usually use Enumclass2Type when call function according to each enum type.
+To the question of where exactly this part can be used well, the correct answer would be "every situation is different", but to introduce my case, it was used a lot when coding with state pattern.
 
-# <font color="Crimson">참고 reference</font>
+The name of each state is defined as an enum class type, and the action to be performed in each state is implemented as function overloading.
 
-+ [8bitscoding 블로그](https://8bitscoding.github.io/cpp/template/int2type/)
+# <font color="Crimson">Reference</font>
+
++ [8bitscoding Blog](https://8bitscoding.github.io/cpp/template/int2type/)
 + [cppreference](https://en.cppreference.com/w/cpp/language/enum)

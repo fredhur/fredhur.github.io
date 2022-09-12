@@ -9,7 +9,7 @@ permalink: /About/
 ---
 
 <font color="Crimson">Computer </font> <font color="ForestGreen">Magic </font><font color="MidnightBlue">Water </font> <br>
-저를 표현하는 세가지 단어입니다. <br>많은걸 잘하려고 노력하는 사람입니다.
+저를 표현하는 세가지 단어입니다. <br>많은 걸 잘하려고 노력하는 사람입니다.
 
 ## <font color="dodgerblue">Interest</font>
 
