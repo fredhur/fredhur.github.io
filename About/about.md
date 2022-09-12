@@ -4,7 +4,7 @@ title: About
 description: >
   write about fredhur
 hide_description: true
-sitemap: true
+sitemap: 
    changefreq : daily
    priority : 1.0
 permalink: /About/
