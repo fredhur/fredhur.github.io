@@ -8,14 +8,14 @@ sitemap: false
 permalink: /About/
 ---
 
-Computer, Magic, Water 
-저를 표현하는 세가지 단어 입니다. <br>많은걸 잘하려고 노력하는 사람입니다.
+<font color="Crimson">Computer </font> <font color="ForestGreen">Magic </font><font color="MidnightBlue">Water </font> <br>
+저를 표현하는 세가지 단어입니다. <br>많은걸 잘하려고 노력하는 사람입니다.
 
 ## <font color="dodgerblue">Interest</font>
 
 + Programming
 + Computer Vision
-+ ISP firmware
++ ISP Firmware
 + Arm Tech
 + Mobile Embedded Programming
 + Android kernel
@@ -23,7 +23,7 @@ Computer, Magic, Water
 ## <font color="dodgerblue">Education</font>
 + Sogang University Computer Science (B.S)
 + Magna Cum Laude Graudate
-+ Samsung Electronics schoarship
++ Samsung Electronics Scholarship Student
 
 
 ## <font color="dodgerblue">Working Experience</font>
@@ -42,7 +42,7 @@ Computer, Magic, Water
 
 ## <font color="dodgerblue">Github</font>
 
-> [My Github](https://github.com/fredhur)
+> [github.com/fredhur](https://github.com/fredhur)
 
 
 

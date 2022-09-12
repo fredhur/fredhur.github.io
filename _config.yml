@@ -29,7 +29,7 @@ description:           >
       Computer Science, 프로그래밍 언어, 혹은 좋은 지식 등을 공유합니다.
 
 # A shorter description for the sidebar.
-tagline:               컴퓨터 과학자 입니다.
+tagline:               컴퓨터 과학자입니다.
 
 # A list of keywords for your blog
 keywords:              [CS, Computer, ComputerScience, programming, cpp]
