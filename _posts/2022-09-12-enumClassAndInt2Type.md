@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: post
 title: Enum Class To Type
 description: >
   enum class 와 int2Type 을 이용한 컨셉
 hide_description: true
 sitemap: true
-permalink: /CPP/
+
 ---
 
 

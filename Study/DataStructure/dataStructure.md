@@ -8,6 +8,6 @@ sitemap: true
 permalink: /Study/DataStructure/
 ---
 
-+ [CircularQueue Buffer](./2022-09-12-CircularQueueBuffer.md)
++ [CircularQueue Buffer](../../_posts/2022-09-12-CircularQueueBuffer.md)
 
 + Finite State Machine (To be soon...)

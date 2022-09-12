@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: post
 title: CircularQueue Buffer
 description: >
   Fixed Size Queue 에 대한 소개
 hide_description: true
 sitemap: true
-permalink: /DataStructure/
+
 ---
 
 

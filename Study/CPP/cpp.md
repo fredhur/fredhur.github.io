@@ -8,5 +8,5 @@ sitemap: true
 permalink: /Study/CPP/
 ---
 
-+ [EnumClass2Type - using int2Type and enum class](./2022-09-12-enumClassAndInt2Type.md)
++ [EnumClass2Type - using int2Type and enum class](../../_posts/2022-09-12-enumClassAndInt2Type.md)
 
