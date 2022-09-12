@@ -9,14 +9,14 @@ sitemap: true
 ---
 
 
-# <font color="DodgerBlue">Introduction</font>
+## <font color="DodgerBlue">Introduction</font>
 
 Enum class and int2Type are powerful grammar that modern c++ provides. 
 This post proposes **EnumClass2Type** which is developed by using enum class and int2Type.
 
 As can be inferred by title , This post deals with how to convert enum class to type.
 
-# <font color="DodgerBlue">enum class</font>
+## <font color="DodgerBlue">enum class</font>
 The enum class is a powerful new concept in modern c++. <br>
 The two main features are as follows.
 
@@ -149,7 +149,7 @@ int main()
 It should be used as int2Type<0> , but it is attractive that different functions can be overloaded with integer types such as 0 , 1 , 2 , etc.
 
 
-# <font color="DodgerBlue"> enum class To type</font>
+## <font color="DodgerBlue"> enum class To type</font>
 
 Combining the above two concepts, introduce a method to convert a variable declared as an enum class into a type.
 I named this concept as **EnumClass2Type** 
@@ -207,7 +207,7 @@ int main()
 
 ~~~
 
-# <font color="DodgerBlue">Usage</font>
+## <font color="DodgerBlue">Usage</font>
 
 int2Type is called intergral_constant since c++11, and it is used variously in modern c++. Like **is_pointer**, it is possible to determine whether the type I passed is a pointer or not, and like **is_array**, it also allows out code to determine whether the type I gave is an array or not
 
@@ -217,7 +217,7 @@ To the question of where exactly this part can be used well, the correct answer 
 
 The name of each state is defined as an enum class type, and the action to be performed in each state is implemented as function overloading.
 
-# <font color="Crimson">Reference</font>
+## <font color="Crimson">Reference</font>
 
 + [8bitscoding Blog](https://8bitscoding.github.io/cpp/template/int2type/)
 + [cppreference](https://en.cppreference.com/w/cpp/language/enum)
