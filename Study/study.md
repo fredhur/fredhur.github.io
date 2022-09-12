@@ -8,8 +8,10 @@ sitemap: false
 permalink: /Study/
 ---
 
-# Study list
+# Categories
 
 + [CPP](./CPP/cpp.md)
+  
 + [DataStructure](./DataStructure/dataStructure.md)
+  
 + [Algorithm](./Algorithm/algorithm.md)
