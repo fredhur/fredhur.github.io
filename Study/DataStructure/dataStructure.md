@@ -8,4 +8,4 @@ sitemap: false
 permalink: /Study/DataStructure/
 ---
 
-+ [CircularQueue Buffer](./2022-09-12-FixedSizeQueue.md)
++ [CircularQueue Buffer](./2022-09-12-CircularQueueBuffer.md)
