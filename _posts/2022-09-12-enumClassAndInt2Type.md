@@ -65,7 +65,7 @@ int main()
 
 ~~~
 
-# <font color="DodgerBlue">int2Type</font>
+## <font color="DodgerBlue">int2Type</font>
 
 
 The int2Type itself has a lot to do with it. I learned that it was made by a legendary programmer who designed all the structures of Facebook, but I forgot his name.
